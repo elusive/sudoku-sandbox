@@ -24,3 +24,13 @@ the checks run on the board (row, col, grid).
 One improvement I think, would definitely be to update the interface so that calling or interacting with the code 
 would be easier. Perhaps a way to check only rows, cols, etc. or possibly more output about the results of the parsing
 and validation.
+
+```mermaid
+graph TD;
+    Customers-->|browse menu|Pizzas;
+    Pizzas-->|add to cart|Cart;
+    Cart-->|review and edit|Cart;
+    Cart-->|checkout|Orders;
+    Orders-->|Payment| Orders;
+    Orders-->|Confirmation|Customers;
+```
